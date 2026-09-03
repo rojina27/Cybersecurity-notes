@@ -1,4 +1,4 @@
-## Simple command to know
+# Simple command to know
 
 **ls** 
 
@@ -45,31 +45,23 @@
 
 *-f* : force
 
-INSERT / EDIT
-i       → start typing
-Esc     → return to Normal mode
+### Sort command 
+` It's used to sort or arrange lines of text in a particular order`
+```bash
+ SYNTAX : sort [option] [file]
+sort filename : sort alphabetically
+sort -r filename : sort in reverse
+-n : sort numeric value
+-nr : sorn numeric value in reverse order
+-k : sort by particular column
+ `eg` : rojina , prajina , roshya
+sort -k1 name.txt 
+output : prajina , rojina , roshya
+-u : sort unique word
+-f : caseinsensitive means ignore upper or lowercase
+-h : sort human-readable numeric
+-M : sort by month
+-c : check if file is already sorted
+-o : store sorted file `eg` : sort file.txt -o file.txt
 
-MOVE
-h       → left
-j       → down
-k       → up
-l       → right
 
-EDIT
-x       → delete character
-dd      → delete line
-yy      → copy (yank) line
-p       → paste
-u       → undo
-Ctrl+r  → redo
-
-SEARCH
-/word   → search for "word"
-n       → next match
-N       → previous match
-
-SAVE / EXIT
-:w      → save
-:q      → quit
-:wq     → save + quit
-:q!     → quit without saving
